@@ -1,6 +1,7 @@
 #sdk: "/Users/MOHUS/.rvm/gems/ruby-1.9.3-p547/gems/rhodes-5.0.26"
 sdkversion: 5.0.0
 name: DistrTest
+app_type: rhoelements
 version: 1.0
 vendor: rhomobile
 build: debug
