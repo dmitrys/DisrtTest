@@ -1,0 +1,30 @@
+#sdk: "/Users/MOHUS/.rvm/gems/ruby-1.9.3-p547/gems/rhodes-5.0.26"
+sdkversion: 5.0.0
+name: DistrTest
+version: 1.0
+vendor: rhomobile
+build: debug
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphoneos8.1
+  provisionprofile:
+  codesignidentity: iPhone Developer
+  entitlements: ""
+  BundleIdentifier: com.rhomobile.distrtest
+  BundleURLScheme: distrtest
+  production:
+    ipa_itunesartwork_image: "./production/iTunesArtwork.png"  
+wp8:
+  productid: '1f60d5b0-8d27-0132-bff2-3c075408aa51'
+android:
+  manifest_template: 'AndroidManifest.erb'
+  version: 2.3.3
+  # Note: in order to simplify debugging only app messages and system channels with priority informative and higher, and any errors are enabled by default
+  logcatFilter: APP:I StrictMode:I DEBUG:I *:E
+
+wm:
+  #sdk: "MC3000c50b (ARMV4I)"
+  #sdk: "Windows Mobile 6.5.3 Professional DTK (ARMV4I)"
+
+extensions: ["rhoconnect-client"]
